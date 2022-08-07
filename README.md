@@ -3,7 +3,7 @@
 ## Enable modules
 
 ```
-go mod init greenlight.hachiko.app
+go mod init github.com/williammunozr/greenlight
 ```
 
 ## Dependencies
