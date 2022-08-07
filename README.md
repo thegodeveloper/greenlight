@@ -1,5 +1,9 @@
 # Greenlight API with Go
 
+Greenlight is a Rest API project of the `Alex Edwards` book. I'm using this book for learning how to build Rest APIs. 
+
+- https://lets-go-further.alexedwards.net/
+
 ## Enable modules
 
 ```
