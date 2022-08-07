@@ -1,4 +1,4 @@
-module github.com/williammunozr/greenlight
+module greenlight.godeveloper.net
 
 go 1.19
 

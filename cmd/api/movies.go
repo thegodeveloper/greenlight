@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/williammunozr/greenlight/internal/data"
+	"greenlight.godeveloper.net/internal/data"
 )
 
 func (app *application) createMovieHandler(w http.ResponseWriter, r *http.Request) {
