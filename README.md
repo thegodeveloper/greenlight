@@ -7,7 +7,7 @@ Greenlight is a Rest API project of the `Alex Edwards` book. I'm using this book
 ## Enable modules
 
 ```
-go mod init greenlight.godeveloper.net
+go mod init github.com/williammunozr/greenlight
 ```
 
 ## Dependencies
