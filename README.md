@@ -15,3 +15,15 @@ go mod init github.com/williammunozr/greenlight
 ```
 go get github.com/julienschmidt/httprouter@v1.3.0
 ```
+
+## Start the PostgreSQL Database
+
+```
+sudo service postgresql start
+```
+
+## Run the API
+
+```
+go run ./cmd/api
+```
