@@ -16,6 +16,22 @@ go mod init github.com/williammunozr/greenlight
 go get github.com/julienschmidt/httprouter@v1.3.0
 ```
 
+### Installing the migrate tool
+
+```
+cd .\Downloads\
+curl -o migrate.windows-amd64.zip https://github.com/golang-migrate/migrate/releases/download/v4.15.2/migrate.windows-amd64.zip
+unzip migrate.windows-amd64.zip
+mv .\migrate.exe ..\go\bin\
+```
+
+### Validate the migrate installation
+
+```
+migrate -version
+4.15.2
+```
+
 ## Start the PostgreSQL Database
 
 ```
