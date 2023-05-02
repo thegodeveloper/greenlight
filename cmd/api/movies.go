@@ -227,4 +227,3 @@ func (app *application) listMoviesHandler(w http.ResponseWriter, r *http.Request
 		app.serverErrorResponse(w, r, err)
 	}
 }
-

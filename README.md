@@ -14,6 +14,7 @@ go mod init github.com/williammunozr/greenlight
 
 ```
 go get github.com/julienschmidt/httprouter@v1.3.0
+go install honnef.co/go/tools/cmd/staticcheck@latest
 ```
 
 ### Installing the migrate tool
