@@ -18,6 +18,14 @@ go install honnef.co/go/tools/cmd/staticcheck@latest
 go get github.com/tomasen/realip@latest
 ```
 
+## Other Software
+
+### Installing hey
+
+```commandline
+$ go install github.com/rakyll/hey@latest
+```
+
 ### Installing the migrate tool
 
 ```
