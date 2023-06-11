@@ -51,5 +51,5 @@ sudo service postgresql start
 ## Run the API
 
 ```
-go run ./cmd/api
+go run ./cmd/api -db-dsn=$GREENLIGHT_DB_DSN
 ```
