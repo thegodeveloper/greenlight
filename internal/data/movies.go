@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/williammunozr/greenlight/internal/validator"
+	"github.com/thegodeveloper/greenlight/internal/validator"
 
 	"github.com/lib/pq"
 )

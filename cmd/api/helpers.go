@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/williammunozr/greenlight/internal/validator"
+	"github.com/thegodeveloper/greenlight/internal/validator"
 
 	"github.com/julienschmidt/httprouter"
 )
@@ -42,7 +42,10 @@ func (app *application) writeJSON(w http.ResponseWriter, status int, data interf
 
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(status)
-	w.Write(js)
+	_, err = w.Write(js)
+	if err != nil {
+		return err
+	}
 
 	return nil
 }
@@ -94,7 +97,7 @@ func (app *application) readJSON(w http.ResponseWriter, r *http.Request, dst any
 
 	err = dec.Decode(&struct{}{})
 	if err != io.EOF {
-		return errors.New("body must only containt a single JSON value")
+		return errors.New("body must only contain a single JSON value")
 	}
 
 	return nil

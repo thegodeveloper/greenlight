@@ -6,8 +6,8 @@ import (
 	"expvar"
 	"flag"
 	"fmt"
-	"github.com/williammunozr/greenlight/internal/jsonlog"
-	"github.com/williammunozr/greenlight/internal/mailer"
+	"github.com/thegodeveloper/greenlight/internal/jsonlog"
+	"github.com/thegodeveloper/greenlight/internal/mailer"
 	"os"
 	"runtime"
 	"strings"
@@ -15,8 +15,8 @@ import (
 	"time"
 
 	_ "github.com/lib/pq"
-	"github.com/williammunozr/greenlight/internal/data"
-	"github.com/williammunozr/greenlight/internal/vcs"
+	"github.com/thegodeveloper/greenlight/internal/data"
+	"github.com/thegodeveloper/greenlight/internal/vcs"
 )
 
 var (

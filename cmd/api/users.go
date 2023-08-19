@@ -2,8 +2,8 @@ package main
 
 import (
 	"errors"
-	"github.com/williammunozr/greenlight/internal/data"
-	"github.com/williammunozr/greenlight/internal/validator"
+	"github.com/thegodeveloper/greenlight/internal/data"
+	"github.com/thegodeveloper/greenlight/internal/validator"
 	"net/http"
 	"time"
 )
@@ -65,12 +65,12 @@ func (app *application) registerUserHandler(w http.ResponseWriter, r *http.Reque
 	}
 
 	app.background(func() {
-		data := map[string]any{
+		actData := map[string]any{
 			"activationToken": token.PlainText,
 			"userID":          user.ID,
 		}
 
-		err = app.mailer.Send(user.Email, "user_welcome.tmpl", data)
+		err = app.mailer.Send(user.Email, "user_welcome.tmpl", actData)
 		if err != nil {
 			app.logger.PrintError(err, nil)
 		}

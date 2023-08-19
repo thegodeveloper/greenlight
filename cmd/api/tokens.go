@@ -2,8 +2,8 @@ package main
 
 import (
 	"errors"
-	"github.com/williammunozr/greenlight/internal/data"
-	"github.com/williammunozr/greenlight/internal/validator"
+	"github.com/thegodeveloper/greenlight/internal/data"
+	"github.com/thegodeveloper/greenlight/internal/validator"
 	"net/http"
 	"time"
 )
@@ -51,11 +51,11 @@ func (app *application) createActivationTokenHandler(w http.ResponseWriter, r *h
 	}
 
 	app.background(func() {
-		data := map[string]any{
+		actData := map[string]any{
 			"activationToken": token.PlainText,
 		}
 
-		err = app.mailer.Send(user.Email, "token_activation.tmpl", data)
+		err = app.mailer.Send(user.Email, "token_activation.tmpl", actData)
 		if err != nil {
 			app.logger.PrintError(err, nil)
 		}
@@ -168,11 +168,11 @@ func (app *application) createPasswordResetTokenHandler(w http.ResponseWriter, r
 	}
 
 	app.background(func() {
-		data := map[string]any{
+		actData := map[string]any{
 			"passwordResetToken": token.PlainText,
 		}
 
-		err = app.mailer.Send(user.Email, "token_password_reset.tmpl", data)
+		err = app.mailer.Send(user.Email, "token_password_reset.tmpl", actData)
 		if err != nil {
 			app.logger.PrintError(err, nil)
 		}

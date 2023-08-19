@@ -4,7 +4,7 @@ import (
 	"math"
 	"strings"
 
-	"github.com/williammunozr/greenlight/internal/validator"
+	"github.com/thegodeveloper/greenlight/internal/validator"
 )
 
 type Metadata struct {
