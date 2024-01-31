@@ -47,6 +47,28 @@ migrate -version
 In the new environment I have Docker Desktop with a PostgreSQL Docker image, just open Docker Desktop and start the container.
 To admin the database I'm using the application DBeaver.
 
+## Grant permissions to greenlight user
+
+```shell
+psql postgres
+
+alter role greenlight superuser;
+```
+
+## Create citext extension in the greenlight database
+
+```shell
+psql $GREENLIGHT_DB_DSN 
+
+CREATE EXTENSION IF NOT EXISTS citext;
+```
+
+## Run the migration
+
+```shell
+migrate -path migrations -database $GREENLIGHT_DB_DSN up
+```
+
 ## Run the API
 
 ```
