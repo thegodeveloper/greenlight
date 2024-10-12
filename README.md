@@ -34,14 +34,6 @@ $ go install github.com/rakyll/hey@latest
 brew install golang-migrate
 ```
 
-#### Windows
-```
-cd .\Downloads\
-curl -o migrate.windows-amd64.zip https://github.com/golang-migrate/migrate/releases/download/v4.15.2/migrate.windows-amd64.zip
-unzip migrate.windows-amd64.zip
-mv .\migrate.exe ..\go\bin\
-```
-
 ### Validate the migrate installation
 
 ```
