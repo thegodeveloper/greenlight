@@ -57,6 +57,18 @@ To admin the database I'm using the application DBeaver.
 ToDo: 
 - Documentation at [Rust Newsletter App](https://github.com/therustdeveloper/newsletter)
 
+## Install psql
+
+```shell
+brew install libpq
+```
+
+## Link psql
+
+```shell
+brew link --force libpq
+```
+
 ## Connect to PostgreSQL Database
 
 ```commandline
