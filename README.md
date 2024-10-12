@@ -28,8 +28,6 @@ $ go install github.com/rakyll/hey@latest
 
 ### Installing the migrate tool
 
-#### macOS
-
 ```shell
 brew install golang-migrate
 ```
